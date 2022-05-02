@@ -5,10 +5,12 @@ import 'package:xando/utils/colors.dart';
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
+  final bool isReadOnly;
   const CustomTextField({
     Key? key,
     required this.controller,
     required this.hintText,
+    this.isReadOnly = false,
   }) : super(key: key);
 
   @override
